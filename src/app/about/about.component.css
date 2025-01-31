@@ -1,0 +1,32 @@
+.mas-sobre{
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.mas-sobre h2{
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.mas-sobre p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+
+@media screen and (max-width: 720px) {
+  .mas-sobre{
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .mas-sobre h2 {
+    text-align: center;
+  }
+
+  .mas-sobre p {
+    text-align: justify;
+  }
+}
+
+@media  screen and (max-width: 420px){}
