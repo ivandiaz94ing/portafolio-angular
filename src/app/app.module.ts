@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
+import { DesplazarArribaComponent } from './desplazar-arriba/desplazar-arriba.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,22 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     ContactoComponent,
     SocialComponent,
-    FooterComponent
+    FooterComponent,
+    DesplazarArribaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
   ],
-  providers: [],
+  exports:[
+    MatIconModule
+  ],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
