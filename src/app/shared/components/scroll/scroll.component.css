@@ -1,0 +1,26 @@
+.skills-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  animation: scrollIcons 8s linear infinite;
+}
+
+@keyframes scrollIcons {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%); /* Solo movemos la mitad, ya que duplicamos los iconos */
+  }
+}
+
+.skill-icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}

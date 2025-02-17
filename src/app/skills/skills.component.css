@@ -1,4 +1,4 @@
-.habilidades{
+/* .habilidades{
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
@@ -34,4 +34,85 @@
   }
 }
 
-@media  screen and (max-width: 420px){}
+@media  screen and (max-width: 420px){} */
+
+
+.habilidades {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.encabezado-habilidad {
+  margin-bottom: 1rem;
+}
+
+.contenedor-habilidades {
+  overflow: hidden; /* Oculta los elementos que se desborden del contenedor */
+
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  animation: scrollCards 16s linear infinite; /* Doblamos la duración para que la animación se vea continua */
+}
+
+@keyframes scrollCards {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* Solo movemos la mitad, ya que duplicamos las tarjetas */
+  }
+}
+
+.skill-card {
+  width: 11.875rem;
+  height: 11.25rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+  flex-shrink: 0; /* Evita que las tarjetas se encojan */
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .skill-card {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+
+  .skill-card {
+    width: 3.875rem;
+    height: 3.25rem;
+    padding: 5px;
+  }
+
+  .skills-wrapper {
+    gap: 3px;
+  }
+
+.skill-card {
+
+}
+
+
+  }
