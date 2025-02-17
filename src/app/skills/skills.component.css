@@ -56,7 +56,7 @@
 .skills-wrapper {
   display: flex;
   gap: 20px;
-  animation: scrollCards 16s linear infinite; /* Doblamos la duración para que la animación se vea continua */
+  animation: scrollCards 10s linear infinite; /* Doblamos la duración para que la animación se vea continua */
 }
 
 @keyframes scrollCards {
@@ -93,7 +93,10 @@
   .skills-wrapper {
     display: flex;
     gap: 5px;
+    animation: scrollCards 5s linear infinite; /* Doblamos la duración para que la animación se vea continua */
   }
+
+
 
 }
 
@@ -107,12 +110,9 @@
   }
 
   .skills-wrapper {
-    gap: 3px;
+    gap: 2px;
+    animation: scrollCards 2s linear infinite; /
   }
-
-.skill-card {
-
-}
 
 
   }
