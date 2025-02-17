@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { ScrollComponent } from './components/scroll/scroll.component';
+import { CarouselModule} from 'primeng/carousel'
 
 
 
@@ -13,11 +14,14 @@ import { ScrollComponent } from './components/scroll/scroll.component';
     ScrollComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CarouselModule
   ],
   exports: [
     CardComponent,
-    ScrollComponent
+    ScrollComponent,
+    CarruselComponent
+
   ]
 })
 export class SharedModule { }

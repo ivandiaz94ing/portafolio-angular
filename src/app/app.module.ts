@@ -17,7 +17,6 @@ import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
 import { DesplazarArribaComponent } from './desplazar-arriba/desplazar-arriba.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { CarruselComponent } from './carrusel/carrusel.component';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -32,7 +31,6 @@ import { SharedModule } from './shared/shared.module';
     SocialComponent,
     FooterComponent,
     DesplazarArribaComponent,
-    CarruselComponent,
 
   ],
   imports: [
