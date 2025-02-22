@@ -1,7 +1,14 @@
-
-<i class="desplazar-arriba" id="desplazar-arriba"
+<!-- <i class="desplazar-arriba" id="desplazar-arriba"
 (click)="desplazarArriba()">
   <img src="assets/icons/icons8-upward-arrow.gif"
   class="socicon-arriba"
   alt="Desplazar hacia arriba">
-</i>
+</i> -->
+<p-button
+    class="desplazar-arriba"
+    id="desplazar-arriba"
+    (click)="desplazarArriba()"
+    [rounded]="true"
+    severity="info">
+        <mat-icon class="socicon-arriba">arrow_upward</mat-icon>
+</p-button>

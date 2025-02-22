@@ -11,6 +11,6 @@ import { Proyecto } from '../interfaces/proyecto.interface';
 export class CardComponent {
 
   @Input()
-  public listaProyecto : Proyecto={name:'', descripcion:' ', image: ' '};
+  public listaProyecto : Proyecto={name:'', descripcion:' ', image: ' ', link:''};
 
 }

@@ -1,17 +1,16 @@
 <div class="contenedor-de-proyecto card-de-proyectos">
   <img
-  src="assets/images/app-english-angular.png"
+  src="assets/images/{{listaProyecto.image}}"
   alt="Aprende ingles en 7 dias"
   loading="lazy"
   class="project-pic"
 />
-<h3 class="titulo-de-proyectos">Master English 7</h3>
+<h3 class="titulo-de-proyectos">{{listaProyecto.name}}</h3>
 <p class="detalles-proyecto">
-  Esta aplicacion está hecha con base al libro del señor Ramon Campaño
-   llamado aprende ingles en 7 días.
+  {{listaProyecto.descripcion}}
 </p>
 
-  <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistaso</a>
+  <a href="{{listaProyecto.link}}" target="_blank" class="enlace-de-proyecto">Echale un vistaso</a>
 </div>
 
 

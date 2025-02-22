@@ -15,4 +15,11 @@ export class NavComponent {
     this.isMenuVisible = !this.isMenuVisible;
   }
 
+  toggleDarkMode() {
+    const element = document.querySelector('html');
+    if(element !== null){
+      element.classList.toggle('my-app-dark')
+    }
+  }
+
 }

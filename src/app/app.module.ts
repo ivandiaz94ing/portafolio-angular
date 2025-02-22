@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatIconModule} from '@angular/material/icon'
 import { providePrimeNG } from 'primeng/config';
-import Aura from '@primeng/themes/aura';
+import Nora from '@primeng/themes/nora';
 
 import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
@@ -47,7 +47,10 @@ import { SharedModule } from './shared/shared.module';
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
-          preset: Aura
+          preset: Nora,
+          options: {
+            darkModeSelector: '.my-app-dark'
+        }
       }
   })
   ],
